@@ -1,0 +1,70 @@
+
+body{
+    background-color: #f1f1f1;
+    color: #f1f1f1;
+    font-family:serif;
+}
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+.box-all{
+    display: grid;
+    grid-template-columns:repeat(5,1fr);
+    grid-template-rows: repeat(3, minmax(700px, auto));
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding-top: 50px;
+    cursor: pointer;
+}
+.small-box{
+    position: absolute;
+    top:82%;
+    left: 10px;
+    font-size:15px;
+
+}
+.box:hover .small-box{
+    padding-left: 10px;
+    transition-duration: 1s;
+}
+.box{
+    position: relative;
+}
+
+.box-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-image: linear-gradient(rgb(172, 172, 226), rgb(20, 82, 214));;
+}
+.box-2{
+    grid-column-start: 2;
+    grid-column-end: 6;
+    background-image: linear-gradient( rgb(122, 105, 218), rgb(35, 37, 145));
+}
+.box-3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: linear-gradient(to bottom left, rgb(29, 52, 158), rgb(241, 178, 126));;
+}
+.box-4{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-image: linear-gradient(rgb(80, 208, 218), rgb(172, 203, 211), rgb(80, 208, 218));;
+}
+.box-5{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    background: linear-gradient(#ddd5d5, #052738);
+}
+.box-6{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-image: linear-gradient(rgb(73, 111, 214), rgb(199, 199, 194), rgb(172, 99, 40));;
+}
+.box-7{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    background: linear-gradient(#d5e5ec,#302b2b);
+}
+
